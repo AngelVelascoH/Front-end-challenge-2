@@ -1,0 +1,86 @@
+:root {
+  --very-dark-blue: hsl(233, 47%, 7%);
+  --dark-desaturated-blue: hsl(244, 38%, 16%);
+  --soft-violet: hsl(277, 64%, 61%);
+  --slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+  --slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
+}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+body {
+  background-color: var(--very-dark-blue);
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+p {
+  font-size: 16px;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 30px;
+  font-family: "Lexend Deca", sans-serif;
+}
+h1 {
+  font-weight: 700;
+  margin-top: 0;
+}
+.main-box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 65%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.left {
+  border-radius: 1rem 0 0 1rem;
+  background-color: var(--dark-desaturated-blue);
+  display: grid;
+  height: auto;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 60% auto;
+}
+.main-image {
+  background-color: var(--soft-violet);
+  border-radius: 0 1rem 1rem 0;
+  height: 100%;
+}
+img {
+  height: 100%;
+  width: 100%;
+  border-radius: 0 1rem 1rem 0;
+  mix-blend-mode: multiply;
+}
+.div1 {
+  grid-column: 1 / 4;
+  width: 60%;
+  margin: 60px 0 0 60px;
+}
+.div2 {
+  align-self: center;
+  justify-self: center;
+  width: 40%;
+}
+.div3 {
+  align-self: center;
+  justify-self: center;
+  width: 40%;
+}
+.div4 {
+  align-self: center;
+  justify-self: center;
+  width: 40%;
+}
+.insights {
+  color: var(--soft-violet);
+}
+.numbers {
+  font-weight: 700;
+  margin: 0;
+  line-height: 40px;
+}
+.stats {
+  color: hsla(0, 0%, 100%, 0.6);
+  text-transform: uppercase;
+  font-family: "Lexend Deca", sans-serif;
+}
